@@ -1,4 +1,4 @@
-# authors: (When joining please add your name)
+# Authors: (When joining please add your name)
 # James Marshall
 
 
