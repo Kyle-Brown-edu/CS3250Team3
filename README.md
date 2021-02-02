@@ -1,5 +1,4 @@
-# CS3250Team3
-# authors: 
+# authors: (When joining please add your name)
 # James Marshall
 
 
