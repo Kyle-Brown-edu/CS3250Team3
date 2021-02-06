@@ -1,17 +1,49 @@
 public class Entry {
-    int ID = 0;
-    int data = 0;
-public int GetData(){
-    return data;
-}
-public int GetID(){
-    return ID;
-}
+    private String productID;
+    private String supplierID;
+    private int stockQuantity;
+    private double wholesaleCost;
+    private double salePrice;
+    
+	public String getProductID() {
+		return productID;
+	}
+	
+	public void setProductID(String productID) {
+		this.productID = productID;
+	}
+	
+	public String getSupplierID() {
+		return supplierID;
+	}
+	
+	public void setSupplierID(String supplierID) {
+		this.supplierID = supplierID;
+	}
+	
+	public int getStockQuantity() {
+		return stockQuantity;
+	}
+	
+	public void setStockQuantity(int stockQuantity) {
+		this.stockQuantity = stockQuantity;
+	}
+	
+	public double getWholesaleCost() {
+		return wholesaleCost;
+	}
+	
+	public void setWholesaleCost(double wholesaleCost) {
+		this.wholesaleCost = wholesaleCost;
+	}
+	
+	public double getSalePrice() {
+		return salePrice;
+	}
+	
+	public void setSalePrice(double salePrice) {
+		this.salePrice = salePrice;
+	}
+    
 
-public void SetData(int data){
-    this.data = data;
-}
-public void setID(int ID){
-    this.ID = ID;
-}
 }

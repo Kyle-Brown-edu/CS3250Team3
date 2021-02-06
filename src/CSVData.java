@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Vector;
 
 public class CSVData implements DataInterface {
@@ -10,13 +11,21 @@ public class CSVData implements DataInterface {
     */
 
     private Vector<Entry>  Data = new Vector<Entry>();
-    private int NumEntries = 0;
+    private int NumEntries;
     
 
     @Override
-    public void initializeDatabase() {
-        // TODO Auto-generated method stub
-
+    public void initializeDatabase(String filename) {
+    	// Initialize a HashMap that stores all inventory data
+    	HashMap<String, Entry> initialData = new HashMap<String, Entry>();
+    	// Initialize a new parser
+    	CSVParser parse = new CSVParser();
+    	
+    	// Load the HashMap with entries
+        initialData = parse.readCSV(filename);
+       
+        // Track how many entries were added
+        this.NumEntries = initialData.size();
     }
 
     @Override
