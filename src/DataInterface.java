@@ -1,5 +1,5 @@
 public interface DataInterface {
-    void initializeDatabase();
+    void initializeDatabase(String filename); // filename allows us to add different files
     void createEntry();
     void readEntry();
     void updateEntry();
