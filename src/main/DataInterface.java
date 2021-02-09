@@ -5,6 +5,6 @@ public interface DataInterface {
     void createEntry();
     void readEntry();
     void updateEntry();
-    void deleteEntry();
+    void deleteEntry(String id);
     void saveEntry();
 }

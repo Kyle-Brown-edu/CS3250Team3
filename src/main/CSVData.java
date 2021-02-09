@@ -16,6 +16,9 @@ public class CSVData implements DataInterface {
     private int NumEntries;
     private HashMap<String, Entry> initialData = new HashMap<String, Entry>();
     
+    // holds the last item to be deleted
+    private Entry lastDel;
+
 
     @Override
     public void initializeDatabase(String filename) {
@@ -51,9 +54,11 @@ public class CSVData implements DataInterface {
     }
 
     @Override
-    public void deleteEntry() {
-        // TODO Auto-generated method stub
-
+    public void deleteEntry(String id) {
+        // stores item to be deleted if needed to recover
+        lastDel = initialData.get(id);
+        // deletes entry using id provided
+        initialData.remove(id);
     }
 
     @Override
