@@ -1,6 +1,8 @@
 package main;
+
 import java.util.HashMap;
 import java.util.Vector;
+
 public class CSVData implements DataInterface {
     /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         this is where we need to create our methods
@@ -12,6 +14,7 @@ public class CSVData implements DataInterface {
 
     private Vector<Entry>  Data = new Vector<Entry>();
     private int NumEntries;
+    private HashMap<String, Entry> initialData = new HashMap<String, Entry>();
     
 
     @Override
@@ -26,6 +29,7 @@ public class CSVData implements DataInterface {
        
         // Track how many entries were added
         this.NumEntries = initialData.size();
+        this.initialData = initialData;
     }
 
     @Override
