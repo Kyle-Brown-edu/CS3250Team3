@@ -63,4 +63,9 @@ public class CSVData implements DataInterface {
 
     }
     
+    @Override
+    public int retSize() {
+        // returns size of HashMap to test delete function
+        return initialData.size();
+    }
 }
