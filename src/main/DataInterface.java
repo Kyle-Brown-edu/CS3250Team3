@@ -7,4 +7,5 @@ public interface DataInterface {
     void updateEntry();
     void deleteEntry(String id);
     void saveEntry();
+    int retSize();
 }

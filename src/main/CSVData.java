@@ -16,8 +16,6 @@ public class CSVData implements DataInterface {
     private int NumEntries;
     private HashMap<String, Entry> initialData = new HashMap<String, Entry>();
     
-    // holds the last item to be deleted
-    private Entry lastDel;
 
 
     @Override
@@ -55,8 +53,6 @@ public class CSVData implements DataInterface {
 
     @Override
     public void deleteEntry(String id) {
-        // stores item to be deleted if needed to recover
-        lastDel = initialData.get(id);
         // deletes entry using id provided
         initialData.remove(id);
     }
@@ -67,4 +63,9 @@ public class CSVData implements DataInterface {
 
     }
     
+    @Override
+    public int retSize() {
+        // returns size of HashMap to test delete function
+        return initialData.size();
+    }
 }
