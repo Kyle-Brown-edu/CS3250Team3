@@ -34,14 +34,16 @@ public class CSVData implements DataInterface {
     }
 
     @Override
-    public void createEntry() {
-        // TODO Auto-generated method stub
+    public void createEntry(String ID, Entry createdEntry) {
+        // Put into hashmap and creates a new entry
+        initialData.put(ID, createdEntry);
             
     }
 
     @Override
-    public void readEntry() {
-        // TODO Auto-generated method stub
+    public void readEntry(String ID) {
+        // What entry is to be read from the hashmap
+        initialData.get(ID);
 
     }
 
