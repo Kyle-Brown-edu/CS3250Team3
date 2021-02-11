@@ -1,12 +1,14 @@
 @startuml
-abstract class " public Data Interface"{
-
-    void initializeDatabase(String filename)
+ interface " public Data Interface"{
+     void initializeDatabase(String filename)
     void createEntry()
     void readEntry()
     void updateEntry()
     void deleteEntry()
-    void saveEntry()  
+    void saveEntry() 
+ }
+    
+     
 
-}
+
 @enduml

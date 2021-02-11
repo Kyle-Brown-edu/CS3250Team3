@@ -1,14 +1,18 @@
 @startuml
 
-abstract class "CSV Data"{
-    private Vector<Entry>  Data
-    private int NumEntries
-}
+CSVData <|-- createEntry
+CSVData <|-- readEntry
+CSVData <|-- updateEntry
+CSVData <|-- deleteEntry
+CSVData <|-- saveEntry
+   
 
-abstract class "createEntry()"{}
-abstract class "readEntry()"{}
-abstract class "updateEntry()"{}
-abstract class "deleteEntry()"{}
-abstract class "saveEntry()"{}
+
+
+
+ 
+
+
+
 
 @enduml
