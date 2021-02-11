@@ -28,9 +28,6 @@ public class CSVParser {
 			    	newEntry.setSupplierID(fields[4]);
 			    	
 			    	results.put(fields[0], newEntry);
-			    	
-			    	System.out.print("Line " + i + ": ");
-			    	System.out.print(results.get(fields[0]).getProductID() + "\n");
 			    	i++;
 			    }
 		} catch (IOException e) {
