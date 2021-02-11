@@ -1,0 +1,9 @@
+@startuml
+abstract class "Entry"{
+    -productID
+    -suplierID
+    -stockQuantity
+    -wholesaleCost
+    -salePrice
+}
+@enduml
