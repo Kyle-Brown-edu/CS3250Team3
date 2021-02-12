@@ -41,16 +41,19 @@ public class CSVData implements DataInterface {
     }
 
     @Override
-    public void readEntry(String ID) {
+    public Entry readEntry(String ID) {
         // What entry is to be read from the hashmap
-        initialData.get(ID);
+        return initialData.get(ID);
 
     }
 
     @Override
-    public void updateEntry() {
-        // TODO Auto-generated method stub
-
+    public void updateEntry(String ID, Entry e) {
+        // we will just replace the entry with a new one that 
+        // auto fills the information that the user did not want to 
+        // change.
+        deleteEntry(ID);
+        createEntry(ID, e);
     }
 
     @Override

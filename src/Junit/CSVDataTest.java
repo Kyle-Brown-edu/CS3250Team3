@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import main.CSVData;
 import main.DataInterface;
+import main.Entry;
 
 public class CSVDataTest {  
     DataInterface testCSV = new CSVData();
@@ -33,5 +34,16 @@ public class CSVDataTest {
         int first = testCSV.retSize();
         testCSV.deleteEntry("B67VWX6R77AQ");
         assertNotEquals(first, testCSV.retSize());
+    }
+
+    @Test
+    void updateEntryTest(){
+        testCSV.initializeDatabase(File);
+        Entry holder = testCSV.readEntry("B67VWX6R77AQ");
+        holder.setStockQuantity(1);
+        testCSV.updateEntry("B67VWX6R77AQ", holder);
+        holder = testCSV.readEntry("B67VWX6R77AQ");
+        assertEquals(holder.getStockQuantity(), 1);
+
     }
 }
