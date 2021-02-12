@@ -34,19 +34,20 @@ public class CSVData implements DataInterface {
     }
 
     @Override
-    public void createEntry() {
+    public void createEntry(Entry e) {
         // TODO Auto-generated method stub
             
     }
 
     @Override
-    public void readEntry() {
+    public Entry readEntry(String ID) {
         // TODO Auto-generated method stub
+        return null;
 
     }
 
     @Override
-    public void updateEntry() {
+    public void updateEntry(String ID, Entry e) {
         // TODO Auto-generated method stub
 
     }
@@ -58,7 +59,7 @@ public class CSVData implements DataInterface {
     }
 
     @Override
-    public void saveEntry() {
+    public void saveEntry(Entry e) {
         // TODO Auto-generated method stub
 
     }
