@@ -28,10 +28,6 @@ public class CSVParser {
 		// Try to open the file and start reading
 		try (InputStream inputStream = getClass().getResourceAsStream(filename);
 			    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
-				reader.readLine(); // Skips the first line containing row headers
-				int i = 1;
-				
-				// Loop through each row and instantiate entries
 			    while((line = reader.readLine()) != null) {
 			    	Entry newEntry = new Entry(); // Create new entry
 			    	fields = line.split(",");     // Split the row into individual fields
@@ -45,11 +41,6 @@ public class CSVParser {
 			    	
 			    	// Add the entry to the result map
 			    	results.put(fields[0], newEntry);
-			    	
-			    	// Output current row and product to console
-			    	System.out.print("Adding object " + i + ": " 
-			    					+ results.get(fields[0]).getProductID() + "\n");
-			    	i++;
 			    }
 		} catch (IOException e) {
 				e.printStackTrace();
