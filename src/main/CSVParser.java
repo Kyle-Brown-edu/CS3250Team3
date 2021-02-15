@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CSVParser {
@@ -16,7 +15,6 @@ public class CSVParser {
 		try (InputStream inputStream = getClass().getResourceAsStream(filename);
 			    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
 				reader.readLine();
-				int i = 1;
 			    while((line = reader.readLine()) != null) {
 			    	Entry newEntry = new Entry();
 			    	fields = line.split(",");
@@ -28,7 +26,6 @@ public class CSVParser {
 			    	newEntry.setSupplierID(fields[4]);
 			    	
 			    	results.put(fields[0], newEntry);
-			    	i++;
 			    }
 		} catch (IOException e) {
 				e.printStackTrace();
