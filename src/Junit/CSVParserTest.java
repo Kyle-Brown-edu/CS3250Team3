@@ -6,17 +6,18 @@ import java.util.HashMap;
 
 import org.junit.jupiter.api.Test;
 
+import main.CSVData;
 import main.CSVParser;
 
 class CSVParserTest {
 	CSVParser parse = new CSVParser();
-	HashMap testMap;
+	CSVData data = new CSVData();
 	String file = "/inventory_team3.csv";
 	
 	@Test
 	public void ReadCSVWorks() {
-		testMap = parse.readCSV(file);
-		assertEquals(42585, testMap.size());
+		parse.readCSV(file, data);
+		assertEquals(42585, data.retSize());
 	}
 
 }

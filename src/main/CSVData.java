@@ -26,7 +26,7 @@ public class CSVData implements DataInterface {
     	CSVParser parse = new CSVParser();
     	
     	// Load the HashMap with entries
-        initialData = parse.readCSV(filename);
+        parse.readCSV(filename, this);
        
         // Track how many entries were added
         this.NumEntries = initialData.size();
