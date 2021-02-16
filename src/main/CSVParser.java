@@ -18,16 +18,17 @@ public class CSVParser {
 	 * Parses a CSV file full of products into Entry objects
 	 *  
 	 * @param filename - Path to the csv file to be parsed
+	 * @param database - Database object
 	 * @return - A HashMap full of filled in entry objects
 	 */
-	public HashMap<String, Entry> readCSV(String filename){
+	public void readCSV(String filename, CSVData database){
 		String line;  	// Current row contents
 		String[] fields;// Array to store individual product fields
-		HashMap<String, Entry> results = new HashMap<String, Entry>(); // Stores <productID,Entry object>
 		
 		// Try to open the file and start reading
 		try (InputStream inputStream = getClass().getResourceAsStream(filename);
 			    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+				reader.readLine();
 			    while((line = reader.readLine()) != null) {
 			    	Entry newEntry = new Entry(); // Create new entry
 			    	fields = line.split(",");     // Split the row into individual fields
@@ -40,11 +41,11 @@ public class CSVParser {
 			    	newEntry.setSupplierID(fields[4]);
 			    	
 			    	// Add the entry to the result map
-			    	results.put(fields[0], newEntry);
+			    	database.createEntry(newEntry.getProductID(), newEntry);
 			    }
 		} catch (IOException e) {
 				e.printStackTrace();
 		}
-		return results;
+		return;
 	}
 }
