@@ -37,14 +37,12 @@ public class CSVData implements DataInterface {
     public void createEntry(String ID, Entry createdEntry) {
         // Put into hashmap and creates a new entry
         initialData.put(ID, createdEntry);
-            
     }
 
     @Override
     public Entry readEntry(String ID) {
         // What entry is to be read from the hashmap
         return initialData.get(ID);
-
     }
 
     @Override
@@ -63,7 +61,7 @@ public class CSVData implements DataInterface {
     }
 
     @Override
-    public void saveEntry() {
+    public void saveEntry(Entry e) {
         // TODO Auto-generated method stub
 
     }
