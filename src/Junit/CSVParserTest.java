@@ -13,6 +13,7 @@ class CSVParserTest {
 	CSVParser parse = new CSVParser();
 	CSVData data = new CSVData();
 	String file = "/inventory_team3.csv";
+
 	
 	@Test
 	public void ReadCSVWorks() {

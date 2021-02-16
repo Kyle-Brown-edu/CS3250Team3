@@ -46,4 +46,20 @@ public class CSVDataTest {
         assertEquals(holder.getStockQuantity(), 1);
 
     }
+
+    @Test
+    void createEntryTest(){
+        Entry e = new Entry();
+        testCSV.createEntry("ID",e );
+        assertEquals(testCSV.retSize(), 1);
+    }
+
+    @Test
+    void saveEntryTest(){
+        Entry e = new Entry();
+        e.setProductID("productID");
+        testCSV.saveEntry(e);
+        assertEquals(testCSV.retSize(), 1);
+    }
+
 }
