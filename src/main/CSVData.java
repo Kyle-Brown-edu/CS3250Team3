@@ -61,11 +61,10 @@ public class CSVData implements DataInterface {
         // deletes entry using id provided
         initialData.remove(id);
     }
-    
+
     @Override
     public void saveEntry(Entry e) {
-        // TODO Auto-generated method stub
-
+        createEntry(e.getProductID(), e);
     }
     
     @Override
