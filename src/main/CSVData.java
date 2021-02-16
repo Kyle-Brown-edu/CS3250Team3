@@ -21,7 +21,7 @@ public class CSVData implements DataInterface {
     @Override
     public void initializeDatabase(String filename) {
     	// Initialize a HashMap that stores all inventory data
-    	HashMap<String, Entry> initialData = new HashMap<String, Entry>();
+    	HashMap<String, Entry> initData = new HashMap<String, Entry>();
     	// Initialize a new parser
     	CSVParser parse = new CSVParser();
     	
@@ -30,7 +30,7 @@ public class CSVData implements DataInterface {
        
         // Track how many entries were added
         this.NumEntries = initialData.size();
-        this.initialData = initialData;
+       
     }
 
     @Override

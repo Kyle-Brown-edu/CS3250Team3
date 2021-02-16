@@ -21,7 +21,7 @@ public class CSVParser {
 	 * @param database - Database object
 	 * @return - A HashMap full of filled in entry objects
 	 */
-	public void readCSV(String filename, CSVData database){
+	public void readCSV(String filename, DataInterface database){
 		String line;  	// Current row contents
 		String[] fields;// Array to store individual product fields
 		
