@@ -6,7 +6,6 @@ public interface DataInterface {
     Entry readEntry(String ID);
     void updateEntry(String ID, Entry e);
     void deleteEntry(String id);
-    void saveEntry();
+    void saveEntry(Entry e);
     int retSize();
 }
-
