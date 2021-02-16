@@ -34,7 +34,7 @@ public class CSVData implements DataInterface {
     }
 
     @Override
-    public void createEntry(String ID, Entry createdEntry) {
+    public void createEntry(String ID, Entry e) {
         // Put into hashmap and creates a new entry
         initialData.put(ID, createdEntry);
             
