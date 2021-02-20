@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gradle.template.EntryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-02-19T12:02:54" hostname="DESKTOP-2GMN38M" time="0.003">
+  <properties/>
+  <testcase name="SetProductIDWorks()" classname="gradle.template.EntryTest" time="0.001"/>
+  <testcase name="setWholesaleCost()" classname="gradle.template.EntryTest" time="0.0"/>
+  <testcase name="SetSupplierIDWorks()" classname="gradle.template.EntryTest" time="0.0"/>
+  <testcase name="setSalePrice()" classname="gradle.template.EntryTest" time="0.0"/>
+  <testcase name="setStockQuantityWorks()" classname="gradle.template.EntryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
