@@ -6,3 +6,5 @@ gradle/template/MainTest.java
  gradle.template.MainTest
 gradle/template/EntryTest.java
  gradle.template.EntryTest
+gradle/template/SQLDataTest.java
+ gradle.template.SQLDataTest
