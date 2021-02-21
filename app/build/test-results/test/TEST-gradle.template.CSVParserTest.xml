@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gradle.template.CSVParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-20T03:10:01" hostname="DESKTOP-2GMN38M" time="0.035">
+<testsuite name="gradle.template.CSVParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-21T00:21:12" hostname="james-Inspiron-15-3567" time="0.062">
   <properties/>
-  <testcase name="ReadCSVWorks()" classname="gradle.template.CSVParserTest" time="0.035"/>
+  <testcase name="ReadCSVWorks()" classname="gradle.template.CSVParserTest" time="0.062"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
