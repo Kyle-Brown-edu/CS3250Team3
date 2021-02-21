@@ -2,7 +2,8 @@
 
 ### Java ###
 *.class
-
+.settings
+.vscode
 # BlueJ files
 *.ctxt
 
