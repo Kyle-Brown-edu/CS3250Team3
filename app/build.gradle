@@ -29,6 +29,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java:5.1.49'
 }
 
+
 tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
