@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gradle.template.CSVDataTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-02-21T00:21:11" hostname="james-Inspiron-15-3567" time="0.459">
+<testsuite name="gradle.template.CSVDataTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-02-21T00:52:43" hostname="james-Inspiron-15-3567" time="0.492">
   <properties/>
-  <testcase name="createEntryTest()" classname="gradle.template.CSVDataTest" time="0.019"/>
-  <testcase name="initDBTest()" classname="gradle.template.CSVDataTest" time="0.154"/>
-  <testcase name="deleteEntryTest()" classname="gradle.template.CSVDataTest" time="0.162"/>
-  <testcase name="retSizeTest()" classname="gradle.template.CSVDataTest" time="0.072"/>
-  <testcase name="updateEntryTest()" classname="gradle.template.CSVDataTest" time="0.043"/>
+  <testcase name="createEntryTest()" classname="gradle.template.CSVDataTest" time="0.027"/>
+  <testcase name="initDBTest()" classname="gradle.template.CSVDataTest" time="0.159"/>
+  <testcase name="deleteEntryTest()" classname="gradle.template.CSVDataTest" time="0.149"/>
+  <testcase name="retSizeTest()" classname="gradle.template.CSVDataTest" time="0.091"/>
+  <testcase name="updateEntryTest()" classname="gradle.template.CSVDataTest" time="0.059"/>
   <testcase name="saveEntryTest()" classname="gradle.template.CSVDataTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
