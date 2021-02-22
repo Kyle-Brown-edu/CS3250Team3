@@ -3,7 +3,7 @@
 ### Java ###
 *.class
 .vscode
-.settings
+
 # BlueJ files
 *.ctxt
 
