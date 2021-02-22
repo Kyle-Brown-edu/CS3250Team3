@@ -3,7 +3,8 @@
 ### Java ###
 *.class
 .vscode
-
+.settings
+.gitignore
 # BlueJ files
 *.ctxt
 
@@ -36,3 +37,6 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # End of https://www.gitignore.io/api/java,gradle
+.settings/org.eclipse.buildship.core.prefs
+.gitignore
+app/build/reports/tests/test/index.html
