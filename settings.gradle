@@ -7,5 +7,5 @@
  * in the user manual at https://docs.gradle.org/6.8.2/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'gradle template'
+rootProject.name = 'CS3250TEAM3'
 include('app')
