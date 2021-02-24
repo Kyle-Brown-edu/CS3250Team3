@@ -1,5 +1,6 @@
 # Created by https://www.gitignore.io/api/java,gradle
-
+app/build/reports/tests/test/index.html
+app/build/
 ### Java ###
 *.class
 .vscode
@@ -40,3 +41,8 @@ gradle-app.setting
 .settings/org.eclipse.buildship.core.prefs
 .gitignore
 app/build/reports/tests/test/index.html
+app/build
+app/build/reports/tests/test/index.html
+app/build/reports/tests/test/index.html
+app/build/reports/tests/test/index.html
+app/build/reports/tests/test/classes/gradle.template.CSVDataTest.html
