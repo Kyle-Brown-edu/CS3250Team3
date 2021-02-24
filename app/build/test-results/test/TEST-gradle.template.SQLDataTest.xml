@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gradle.template.SQLDataTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-22T02:56:56" hostname="james-Inspiron-15-3567" time="1.267">
-  <properties/>
-  <testcase name="AddEntryWorks()" classname="gradle.template.SQLDataTest" time="1.267"/>
-  <system-out><![CDATA[Connected to...5.7.33-0ubuntu0.18.04.1
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
