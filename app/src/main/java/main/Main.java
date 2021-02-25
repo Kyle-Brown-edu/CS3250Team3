@@ -1,6 +1,6 @@
 package main;
 
-public class Main{
+public class Main extends Application {
     public static void main(String[] args) {
         CSVData init = new CSVData();
         init.initializeDatabase("testData.csv");
